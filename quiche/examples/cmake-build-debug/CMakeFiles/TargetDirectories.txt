@@ -1,0 +1,4 @@
+/mvs/test/quiche_test/quiche/examples/cmake-build-debug/CMakeFiles/client.dir
+/mvs/test/quiche_test/quiche/examples/cmake-build-debug/CMakeFiles/server.dir
+/mvs/test/quiche_test/quiche/examples/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mvs/test/quiche_test/quiche/examples/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build/CMakeFiles/crypto.dir
+/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build/CMakeFiles/ssl.dir
+/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build/CMakeFiles/bssl.dir
+/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build/CMakeFiles/edit_cache.dir
+/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build/CMakeFiles/rebuild_cache.dir

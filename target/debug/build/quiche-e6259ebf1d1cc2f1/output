@@ -1,0 +1,37 @@
+CMAKE_TOOLCHAIN_FILE_x86_64-unknown-linux-gnu = None
+CMAKE_TOOLCHAIN_FILE_x86_64_unknown_linux_gnu = None
+HOST_CMAKE_TOOLCHAIN_FILE = None
+CMAKE_TOOLCHAIN_FILE = None
+CMAKE_GENERATOR_x86_64-unknown-linux-gnu = None
+CMAKE_GENERATOR_x86_64_unknown_linux_gnu = None
+HOST_CMAKE_GENERATOR = None
+CMAKE_GENERATOR = None
+CMAKE_PREFIX_PATH_x86_64-unknown-linux-gnu = None
+CMAKE_PREFIX_PATH_x86_64_unknown_linux_gnu = None
+HOST_CMAKE_PREFIX_PATH = None
+CMAKE_PREFIX_PATH = None
+CMAKE_x86_64-unknown-linux-gnu = None
+CMAKE_x86_64_unknown_linux_gnu = None
+HOST_CMAKE = None
+CMAKE = None
+running: cd "/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build" && CMAKE_PREFIX_PATH="" "cmake" "/mvs/quic/quiche/quiche/deps/boringssl" "-DCMAKE_INSTALL_PREFIX=/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build
+running: cd "/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build" && MAKEFLAGS="-j --jobserver-fds=7,8 --jobserver-auth=7,8" "cmake" "--build" "." "--target" "ssl" "--config" "Debug"
+Consolidate compiler generated dependencies of target ssl
+[100%] Built target ssl
+cargo:root=/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out
+running: cd "/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build" && CMAKE_PREFIX_PATH="" "cmake" "/mvs/quic/quiche/quiche/deps/boringssl" "-DCMAKE_INSTALL_PREFIX=/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build
+running: cd "/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build" && MAKEFLAGS="-j --jobserver-fds=7,8 --jobserver-auth=7,8" "cmake" "--build" "." "--target" "crypto" "--config" "Debug"
+Scanning dependencies of target crypto
+Consolidate compiler generated dependencies of target crypto
+[100%] Built target crypto
+cargo:root=/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out
+cargo:rustc-link-arg=-Wl,-rpath,/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out
+cargo:rustc-link-search=native=/mvs/quic/quiche/target/debug/build/quiche-e6259ebf1d1cc2f1/out/build/
+cargo:rustc-link-lib=static=ssl
+cargo:rustc-link-lib=static=crypto

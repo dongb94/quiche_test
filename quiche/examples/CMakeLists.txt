@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.18)
 
 project(
         QUICHE
-        VERSION 0.1
+        VERSION 0.2
         DESCRIPTION "MVS quiche TEST"
         LANGUAGES CXX)
 
@@ -11,13 +11,21 @@ set_target_properties(QUICHE PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE
 
 add_executable(client ./client.cpp)
 add_executable(server ./server.cpp)
+add_executable(http3client ./http3-client.cpp)
+add_executable(http3server ./http3-server.cpp)
 
 target_link_libraries(client PRIVATE QUICHE ev)
 target_link_libraries(server PRIVATE QUICHE ev)
+target_link_libraries(http3client PRIVATE QUICHE ev)
+target_link_libraries(http3server PRIVATE QUICHE ev)
 
 message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}/include")
 target_include_directories(client PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_include_directories(server PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(http3client PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(http3server PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 target_compile_options(client PRIVATE -Wall)
 target_compile_options(server PRIVATE -Wall)
+target_compile_options(http3client PRIVATE -Wall)
+target_compile_options(http3server PRIVATE -Wall)

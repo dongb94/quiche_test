@@ -12,4 +12,4 @@ cat cert.crt >> cert-big.crt
 cat cert.crt >> cert-big.crt
 rm cert.csr
 rm rootca.key
-rm rootca.srl
+rm rootca.crt

@@ -12,29 +12,12 @@ source.
 
 ### Build
 
-Simply run `make` in this directory.
+To build [client](client.cpp) and [server](server.cpp),
+Simply run `cmake` in build directory.
 
 ```
-% make clean
+% mkdir build && cd build
+% cmake ..
 % make
-```
-
-Examples Docker image
----------------------
-You can experiment with [http3-client](http3-client.rs),
-[http3-server](http3-server.rs), [client](client.rs) and [server](server.rs)
-using Docker.
-
-The Examples [Dockerfile](Dockerfile) builds a Debian image.
-
-To build:
-
-```
-docker build -t cloudflare-quiche .
-```
-
-To make an HTTP/3 request:
-
-```
-docker run -it cloudflare-quiche http3-client https://cloudflare-quic.com
+% cp ../cert* ./
 ```
